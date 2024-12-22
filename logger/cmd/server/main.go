@@ -7,6 +7,9 @@ import (
 )
 
 func main() {
+	var pos int64
+	log.Println(pos)
+
 	srv := server.NewHTTPServer(":8069")
 	log.Fatal(srv.ListenAndServe())
 }
